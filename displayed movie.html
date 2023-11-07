@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website with all the animes you can possibly think of">
+    <title>Anime Details</title>
+    <link rel="stylesheet" type="text/css" href="./movie.css">
+    <script type="module" src="./movie.js" defer></script>
+</head>
+
+<body>
+    <div class="navigation">
+        <nav class="navBar">
+            <h2 class="navTitle"><span>MM<div class="navLoading"></div></span> <span class="colored">ANIME</span></h2>
+
+            <section class="searchNSettings">
+                <div class="searchInput">
+                    <input type="text" placeholder="Search movies" id="search">
+                    <img src="./img/search.png" alt="A search icon">
+                    <div id="searchedList"></div>
+                </div>
+                <img loading="lazy" src="./img/settings.png" alt="A Settings icon">
+            </section>
+        </nav>
+
+        <aside class="sideBar">
+            <ul class="links">
+                <li class="link">
+                    <a href="./movie.html">
+                        <img src="./img/4200780_buildings_home_house_icon.png" alt="A home icon">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="./trending.html">
+                        <img src="./img/flame.png" alt="A trending icon">
+                        <span>Trending</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="./explore anime.html">
+                        <img src="./img/8530694_compass_icon.png" alt="An explore icon">
+                        <span>Explore</span>
+                    </a>
+                </li>
+                <li class="link activeLink">
+                    <a href="./displayed movie.html">
+                        <img src="./img/aFilm.png" alt="A movies icon">
+                        <span>Animes</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="./contact.html">
+                        <img src="./img/icon.png" alt="A favorites icon">
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <header class="heroContainer">
+        <section class="hero displayHero">
+            <h2 class="heroTitle">Dororo</h2>
+            <p class="heroDate colored">5 Stars</p>
+            <div class="animeGenreButtons">
+                <button class="aniGenBtn aniGenBtn-1">Action</button>
+                <button class="aniGenBtn aniGenBtn-2">Adventure</button>
+                <button class="aniGenBtn aniGenBtn-3">4K</button>
+            </div>
+            <div class="heroTrailer">
+                <button class="playTrail" id="playAnime">
+                    <img src="../../img/iconmonstr-caret-right-lined-240.png" alt="A play trailer image">
+                </button>
+                <h3>Watch an episode</h3>
+            </div>
+        </section>
+    </header>
+
+    <div id="moviePlayer">
+        <big id="close">X</big>
+        <video id="video" src="./img/EP.5.v0.360p.mp4" controls></video>
+    </div>
+
+    <main class="mainContent">
+        <section class="aboutSec">
+            <h3>Dororo</h3>
+            <div class="aboutContent">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa commodi rerum molestiae
+                    sapiente enim earum repellat maxime dignissimos, necessitatibus aut! Debitis, praesentium at. Unde
+                    debitis perferendis non harum nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <h3>Anime Cast</h3>
+            <div class="animeCast">
+                <div class="aniCharacter aniCharacter-1">
+                    <img src="../../img/wallpapers/avatar/file-1953-976771.jpg" alt="Anime character image">
+                    <h4>Anime Name</h4>
+                </div>
+                <div class="aniCharacter aniCharacter-2">
+                    <img src="../../img/wallpapers/Anime Wallpaper Offline/2f63cc1ed1709c536115424d88b17fc0.jpg"
+                        alt="Anime character image">
+                    <h4>Anime Name</h4>
+                </div>
+                <div class="aniCharacter aniCharacter-3">
+                    <img src="../../img/wallpapers/Anime Wallpaper Offline/1e355bc1bfd49db2c8b371d5da5bffe5.jpg"
+                        alt="Anime character image">
+                    <h4>Anime Name</h4>
+                </div>
+                <div class="aniCharacter aniCharacter-4">
+                    <img src="../../img/wallpapers/Anime Wallpaper Offline/19a6d81b82acb02254338a44eb9b1148.jpg"
+                        alt="Anime character image">
+                    <h4>Anime Name</h4>
+                </div>
+                <div class="aniCharacter aniCharacter-5">
+                    <img src="../../img/wallpapers/Anime Wallpaper Offline/47c9cd6e6fc96d2078f05ac79588def2.jpg"
+                        alt="Anime character image">
+                    <h4>Anime Name</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="displayDownloads">
+        <h4>DownLoads</h4>
+        <div class="downloadBtns">
+            <h5 class="seaTitle">Season 1</h5>
+            <div class="downloadBtnsSea downloadBtnsSea-1">
+                <a class="downBtn downBtn-1">Episode 1</a>
+                <a class="downBtn downBtn-2">Episode 2</a>
+                <a class="downBtn downBtn-3">Episode 3</a>
+                <a class="downBtn downBtn-4">Episode 4</a>
+                <a class="downBtn downBtn-5">Episode 5</a>
+                <a class="downBtn downBtn-6">Episode 6</a>
+                <a class="downBtn downBtn-7">Episode 7</a>
+                <a class="downBtn downBtn-8">Episode 8</a>
+                <a class="downBtn downBtn-9">Episode 9</a>
+                <a class="downBtn downBtn-10">Episode 10</a>
+                <a class="downBtn downBtn-11">Episode 11</a>
+                <a class="downBtn downBtn-12">Episode 12</a>
+            </div>
+            <h5 class="seaTitle">Season 2</h5>
+            <div class="downloadBtnsSea downloadBtnsSea-2">
+                <a class="downBtn downBtn-1">Episode 1</a>
+                <a class="downBtn downBtn-2">Episode 2</a>
+                <a class="downBtn downBtn-3">Episode 3</a>
+                <a class="downBtn downBtn-4">Episode 4</a>
+                <a class="downBtn downBtn-5">Episode 5</a>
+                <a class="downBtn downBtn-6">Episode 6</a>
+                <a class="downBtn downBtn-7">Episode 7</a>
+                <a class="downBtn downBtn-8">Episode 8</a>
+                <a class="downBtn downBtn-9">Episode 9</a>
+                <a class="downBtn downBtn-10">Episode 10</a>
+                <a class="downBtn downBtn-11">Episode 11</a>
+                <a class="downBtn downBtn-12">Episode 12</a>
+            </div>
+            <h5 class="seaTitle">Season 3</h5>
+            <div class="downloadBtnsSea downloadBtnsSea-3">
+                <a class="downBtn downBtn-1">Episode 1</a>
+                <a class="downBtn downBtn-2">Episode 2</a>
+                <a class="downBtn downBtn-3">Episode 3</a>
+                <a class="downBtn downBtn-4">Episode 4</a>
+                <a class="downBtn downBtn-5">Episode 5</a>
+                <a class="downBtn downBtn-6">Episode 6</a>
+                <a class="downBtn downBtn-7">Episode 7</a>
+                <a class="downBtn downBtn-8">Episode 8</a>
+                <a class="downBtn downBtn-9">Episode 9</a>
+                <a class="downBtn downBtn-10">Episode 10</a>
+                <a class="downBtn downBtn-11">Episode 11</a>
+                <a class="downBtn downBtn-12">Episode 12</a>
+            </div>
+        </div>
+        <div class="season">
+            <a class="seaDownBtn seaDownBtn-1">Download Season 1</a>
+            <a class="seaDownBtn seaDownBtn-2">Download Season 2</a>
+            <a class="seaDownBtn seaDownBtn-3">Download Season 3</a>
+        </div>
+        <p>&copy; CarpoolVenom All Right Reserved</p>
+    </footer>
+</body>
+
+</html>

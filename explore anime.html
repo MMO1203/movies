@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search for your desired anime">
+    <title>Explore</title>
+    <link rel="stylesheet" type="text/css" href="./movie.css">
+    <script type="module" src="./movie.js" defer></script>
+    <style>
+        .wrapper * {
+            color: #000;
+        }
+
+        img {
+            cursor: pointer;
+        }
+
+        .container {
+            position: relative;
+            width: max(330px, 45vw);
+            min-height: 80px;
+            margin: 10rem auto;
+        }
+
+        .wrapper {
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            background-color: var(--tri-color2);
+            color: #000;
+            padding-bottom: .51rem;
+            border-radius: 0.5rem;
+            position: relative;
+        }
+
+        .wrapper button {
+            width: 3.7rem;
+            height: 3.7rem;
+            background: transparent;
+            border: none;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+
+        .wrapper input {
+            outline: none;
+            width: 97%;
+            height: 6.5rem;
+            font-size: 2.2rem;
+            margin-left: 1.5%;
+            padding-left: 0.5rem;
+            background: transparent;
+            padding-right: 4.7rem;
+            border: none;
+            border-bottom: 2px solid var(--text-color);
+            color: var(--text-color2);
+        }
+
+        .results {
+            position: absolute;
+            background-color: var(--tri-color2);
+            width: 100%;
+            top: 100%;
+            min-height: 150;
+            max-height: 260px;
+            overflow-y: scroll;
+            z-index: 1;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <nav class="navBar">
+            <h2 class="navTitle"><span>MM<div class="navLoading"></div></span> <span class="colored">ANIME</span></h2>
+        </nav>
+
+        <aside class="sideBar">
+            <ul class="links">
+                <li class="link">
+                    <a href="./movie.html">
+                        <img src="./img/4200780_buildings_home_house_icon.png" alt="A home icon">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="./trending.html">
+                        <img src="./img/flame.png" alt="A trending icon">
+                        <span>Trending</span>
+                    </a>
+                </li>
+                <li class="link activeLink">
+                    <a href="./explore anime.html">
+                        <img src="./img/compass.png" alt="An explore icon">
+                        <span>Explore</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="./displayed movie.html">
+                        <img src="./img/8665572_film_movie_icon.png" alt="A movies icon">
+                        <span>Animes</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="./contact.html">
+                        <img src="./img/icon.png" alt="A favorites icon">
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <div class="container">
+        <div class="wrapper">
+            <input type="text" class="searchable2" placeholder="Type to search" autocomplete="chrome-off">
+            <button><img src="./img/search.png" alt="A search icon"></button>
+
+        </div>
+        <div class="results"></div>
+    </div>
+
+    <script>
+        let searchable2 = ['Dragon Ball Super','Tokyo Ghoul','Hunter X Hunter','Seven Deadly Sins','My Hero Academia','Blue Luck','Super Boy','Over The World','Air Bender','Rail Guns','i do kow','Bright sun','Dark Night'];
+
+        const searchInput2 = document.querySelector('.searchable2');
+        const wrapper = document.querySelector('.wrapper');
+        const resDisplay2 = document.querySelector('.results');
+
+        searchInput2.addEventListener('input', () => {
+            const searched2 = searchable2.filter(item => {
+                return item.toLowerCase().includes(searchInput2.value.toLowerCase())
+            });
+
+            display(searched2);
+        });
+
+        function display(searchList2) {
+            const listItem2 = searchList2.map(item2 => {
+                return `<span><a href="./displayed movie.html">${item2}</a></span>`;
+            }).join('');
+
+            if (searchInput2.value === '') {
+                return resDisplay2.innerHTML = '';
+            };
+
+            resDisplay2.innerHTML = listItem2;
+        }
+    </script>
+</body>
+
+</html>

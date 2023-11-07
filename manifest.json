@@ -1,0 +1,8 @@
+{
+    "short_name": "Animes",
+    "name": "Animes",
+    "background_color": "#1e1e2b",
+    "theme_color": "#006ef4",
+    "start_url": "/API%20Projects/movies/",
+    "display": "standalone"
+}

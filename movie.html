@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website with all the animes you can possibly think of">
+    <meta name="keywords" content="The best animes in the world">
+    <title>Animes App</title>
+    <link rel="stylesheet" type="text/css" href="./movie.css">
+    <link rel="manifest" href="./manifest.json">
+    <script type="module" src="./movie.js" defer></script>
+</head>
+
+<body>
+    <div class="loading" id="loader"></div>
+    <div class="navigation">
+        <nav class="navBar">
+            <h2 class="navTitle"><span>MM<div class="navLoading"></div></span> <span class="colored">ANIME</span></h2>
+
+            <section class="searchNSettings">
+                <div class="searchInput">
+                    <input type="text" placeholder="Search movies" id="search">
+                    <img loading="lazy" src="./img/search.png" alt="A search icon">
+                    <div id="searchedList"></div>
+                </div>
+                <img loading="lazy" src="./img/settings.png" alt="A Settings icon">
+            </section>
+        </nav>
+
+        <aside class="sideBar">
+            <ul class="links">
+                <li class="link activeLink">
+                    <a href="./movie.html">
+                        <img loading="lazy" src="./img/house.png" alt="A home icon">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="./trending.html">
+                        <img loading="lazy" src="./img/flame.png" alt="A trending icon">
+                        <span>Trending</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="./explore anime.html">
+                        <img loading="lazy" src="./img/8530694_compass_icon.png" alt="An explore icon">
+                        <span>Explore</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="./displayed movie.html">
+                        <img loading="lazy" src="./img/8665572_film_movie_icon.png" alt="A movies icon">
+                        <span>Animes</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="./contact.html">
+                        <img loading="lazy" src="./img/icon.png" alt="A favorites icon">
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <header class="heroContainer">
+        <section class="hero">
+            <h2 class="heroTitle">Dororo</h2>
+            <p class="heroDate colored">Released 3 April, 1976</p>
+            <div class="heroTrailer">
+                <button class="playTrail">
+                    <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png" alt="A play trailer image">
+                </button>
+                <h3>Watch an episode</h3>
+            </div>
+        </section>
+    </header>
+
+    <main class="mainContent">
+        <section class="popularSec">
+            <div class="popular">
+                <h4>Popular Animes</h4>
+                <div class="popularScroll">
+                    <div class="scrollLeft scroll" id="backwards">←</div>
+                    <div class="scrollRight scroll" id="forwards">→</div>
+                </div>
+            </div>
+
+            <div class="popularAnimeCards">
+                <div class="inner">
+                    <div class="animeCard animeCard-1">
+                        <div class="animeCardInfo">
+                            <div class="shifted">
+                                <div class="cardShift">
+                                    <h5 class="animeCardTitle">Bright Sun</h5>
+                                    <p>Drama</p>
+                                </div>
+                                <button class="playTrail" id="animePreview">
+                                    <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                        alt="A play trailer image">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="animeCard animeCard-2">
+                        <div class="animeCardInfo">
+                            <div class="shifted">
+                                <div class="cardShift">
+                                    <h5 class="animeCardTitle">Bright Sun</h5>
+                                    <p>Drama</p>
+                                </div>
+                                <button class="playTrail" id="animePreview">
+                                    <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                        alt="A play trailer image">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="animeCard animeCard-3">
+                        <div class="animeCardInfo">
+                            <div class="shifted">
+                                <div class="cardShift">
+                                    <h5 class="animeCardTitle">Bright Sun</h5>
+                                    <p>Drama</p>
+                                </div>
+                                <button class="playTrail" id="animePreview">
+                                    <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                        alt="A play trailer image">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="animeCard animeCard-4">
+                        <div class="animeCardInfo">
+                            <div class="shifted">
+                                <div class="cardShift">
+                                    <h5 class="animeCardTitle">Bright Sun</h5>
+                                    <p>Drama</p>
+                                </div>
+                                <button class="playTrail" id="animePreview">
+                                    <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                        alt="A play trailer image">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="animeCard animeCard-5">
+                        <div class="animeCardInfo">
+                            <div class="shifted">
+                                <div class="cardShift">
+                                    <h5 class="animeCardTitle">Bright Sun</h5>
+                                    <p>Drama</p>
+                                </div>
+                                <button class="playTrail" id="animePreview">
+                                    <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                        alt="A play trailer image">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="animeCard animeCard-6">
+                        <div class="animeCardInfo">
+                            <div class="shifted">
+                                <div class="cardShift">
+                                    <h5 class="animeCardTitle">Bright Sun</h5>
+                                    <p>Drama</p>
+                                </div>
+                                <button class="playTrail" id="animePreview">
+                                    <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                        alt="A play trailer image">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="animeCard animeCard-1">
+                        <div class="animeCardInfo">
+                            <div class="shifted">
+                                <div class="cardShift">
+                                    <h5 class="animeCardTitle">Bright Sun</h5>
+                                    <p>Drama</p>
+                                </div>
+                                <button class="playTrail" id="animePreview">
+                                    <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                        alt="A play trailer image">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seriesSec">
+            <div class="series">
+                <h4>Movies And Series</h4>
+            </div>
+
+            <div class="seriesAnimeCards" id="addedTo">
+                <div class="animeCard animeCard-1">
+                    <div class="animeCardInfo">
+                        <div class="shifted">
+                            <div class="cardShift">
+                                <h5 class="animeCardTitle">Bright Sun</h5>
+                                <p>Drama</p>
+                            </div>
+                            <button class="playTrail" id="animePreview">
+                                <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                    alt="A play trailer image">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="animeCard animeCard-2">
+                    <div class="animeCardInfo">
+                        <div class="shifted">
+                            <div class="cardShift">
+                                <h5 class="animeCardTitle">Bright Sun</h5>
+                                <p>Drama</p>
+                            </div>
+                            <button class="playTrail" id="animePreview">
+                                <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                    alt="A play trailer image">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="animeCard animeCard-3">
+                    <div class="animeCardInfo">
+                        <div class="shifted">
+                            <div class="cardShift">
+                                <h5 class="animeCardTitle">Bright Sun</h5>
+                                <p>Drama</p>
+                            </div>
+                            <button class="playTrail" id="animePreview">
+                                <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                    alt="A play trailer image">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="animeCard animeCard-4">
+                    <div class="animeCardInfo">
+                        <div class="shifted">
+                            <div class="cardShift">
+                                <h5 class="animeCardTitle">Bright Sun</h5>
+                                <p>Drama</p>
+                            </div>
+                            <button class="playTrail" id="animePreview">
+                                <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                    alt="A play trailer image">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="animeCard animeCard-5">
+                    <div class="animeCardInfo">
+                        <div class="shifted">
+                            <div class="cardShift">
+                                <h5 class="animeCardTitle">Bright Sun</h5>
+                                <p>Drama</p>
+                            </div>
+                            <button class="playTrail" id="animePreview">
+                                <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                    alt="A play trailer image">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="animeCard animeCard-6">
+                    <div class="animeCardInfo">
+                        <div class="shifted">
+                            <div class="cardShift">
+                                <h5 class="animeCardTitle">Bright Sun</h5>
+                                <p>Drama</p>
+                            </div>
+                            <button class="playTrail" id="animePreview">
+                                <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                    alt="A play trailer image">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="animeCard animeCard-1">
+                    <div class="animeCardInfo">
+                        <div class="shifted">
+                            <div class="cardShift">
+                                <h5 class="animeCardTitle">Bright Sun</h5>
+                                <p>Drama</p>
+                            </div>
+                            <button class="playTrail" id="animePreview">
+                                <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                    alt="A play trailer image">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="animeCard animeCard-1">
+                    <div class="animeCardInfo">
+                        <div class="shifted">
+                            <div class="cardShift">
+                                <h5 class="animeCardTitle">Bright Sun</h5>
+                                <p>Drama</p>
+                            </div>
+                            <button class="playTrail" id="animePreview">
+                                <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                    alt="A play trailer image">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="animeCard animeCard-2">
+                    <div class="animeCardInfo">
+                        <div class="shifted">
+                            <div class="cardShift">
+                                <h5 class="animeCardTitle">Bright Sun</h5>
+                                <p>Drama</p>
+                            </div>
+                            <button class="playTrail" id="animePreview">
+                                <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                    alt="A play trailer image">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="animeCard animeCard-3">
+                    <div class="animeCardInfo">
+                        <div class="shifted">
+                            <div class="cardShift">
+                                <h5 class="animeCardTitle">Bright Sun</h5>
+                                <p>Drama</p>
+                            </div>
+                            <button class="playTrail" id="animePreview">
+                                <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                    alt="A play trailer image">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="animeCard animeCard-4">
+                    <div class="animeCardInfo">
+                        <div class="shifted">
+                            <div class="cardShift">
+                                <h5 class="animeCardTitle">Bright Sun</h5>
+                                <p>Drama</p>
+                            </div>
+                            <button class="playTrail" id="animePreview">
+                                <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                    alt="A play trailer image">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="animeCard animeCard-5">
+                    <div class="animeCardInfo">
+                        <div class="shifted">
+                            <div class="cardShift">
+                                <h5 class="animeCardTitle">Bright Sun</h5>
+                                <p>Drama</p>
+                            </div>
+                            <button class="playTrail" id="animePreview">
+                                <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                    alt="A play trailer image">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="animeFooter">
+        <div class="footerContent">
+            <button class="ripple" id="load">Load More</button>
+            <p>&copy; CarpoolVenom All Right Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        const loadMoreBtn = document.querySelector( '#load' );
+        const movieWasAddedTo = document.querySelector( '#addedTo' );
+        const animatedLoader = document.querySelector( '#loader' );
+        const slider = document.querySelector( '.inner' );
+        let pressed = false;
+
+        loadMoreBtn.addEventListener( 'click', () =>
+        {
+            animatedLoader.classList.add( 'load' );
+            animatedLoader.addEventListener( 'animationend', () =>
+            {
+                animatedLoader.classList.remove( 'load' );
+                for ( let i = 0; i < 6; i++ )
+                {
+                    const movieCardTemplate = `
+                    <div class="animeCard animeCard-${i+1}">
+                        <div class="animeCardInfo">
+                            <div class="shifted">
+                                <div class="cardShift">
+                                    <h5 class="animeCardTitle">Blue Luck</h5>
+                                    <p>Action/Thrill</p>
+                                </div>
+                                <button class="playTrail" id="animePreview">
+                                    <img loading="lazy" src="../../img/iconmonstr-caret-right-lined-240.png"
+                                        alt="A play trailer image">
+                                </button>
+                            </div>
+                        </div>
+                    </div>`;
+                    movieWasAddedTo.innerHTML += movieCardTemplate;
+                }
+            } );
+        } );
+
+        slider.addEventListener('mousedown', e => {
+            pressed = true;
+            slider.style.cursor = 'grabbing';
+        });
+
+        slider.addEventListener('mouseenter', () => {
+            slider.style.cursor = 'grab';
+        } );
+
+        slider.addEventListener('mouseup', () => {
+            slider.style.cursor = 'grab';
+            pressed = false;
+        } );
+
+        slider.addEventListener('mousemove', e => {
+            if (pressed) {
+                if ( window.innerWidth <= 650 ) {
+                    slider.scrollLeft -= e.movementX * 210;
+                } else if ( window.innerWidth <= 1060 ) {
+                    slider.scrollLeft -= e.movementX * 270;
+                } else {
+                    slider.scrollLeft -= e.movementX * 286;
+                }
+            };
+        });
+    </script>
+</body>
+
+</html>
